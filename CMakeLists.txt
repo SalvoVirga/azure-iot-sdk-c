@@ -83,9 +83,6 @@ set(linkerOption "" CACHE STRING "passes a string to the shared and exe linker o
 
 set(use_prov_client_core OFF)
 
-# Ensuring the RPath is correct when installing the libraries.
-set(CMAKE_INSTALL_RPATH "$ORIGIN")
-
 if(${use_custom_heap})
     add_definitions(-DGB_USE_CUSTOM_HEAP)
 endif()
